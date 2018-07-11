@@ -25,7 +25,7 @@ setInterval(() => {
   https.get('https://face-detection-api-ca.herokuapp.com/');
   https.get('https://face-detection-cyril-antoni.herokuapp.com/');
   console.log('app pinged!');
-}, 300000);
+}, 2700000);
 
 const app = express();
 app.use(bodyParser.json());
