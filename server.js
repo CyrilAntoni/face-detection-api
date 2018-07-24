@@ -20,12 +20,12 @@ const db = knex({
   }
 });
 
-// ping the app every 5 minutes so the app stays awake on heroku
+// ping the app every 30 minutes so the app stays awake on heroku
 setInterval(() => {
   https.get('https://face-detection-api-ca.herokuapp.com/');
   https.get('https://face-detection-cyril-antoni.herokuapp.com/');
   console.log('app pinged!');
-}, 2700000);
+}, 1800000);
 
 const app = express();
 app.use(bodyParser.json());
